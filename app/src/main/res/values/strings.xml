@@ -1,0 +1,12 @@
+<resources>
+
+    <string name="app_name">WorkinGo</string>
+    <string name="ItemInicio">Inicio</string>
+    <string name="ItemChat">Chat</string>
+    <string name="ItemPublicar">Publicar</string>
+    <string name="ItemCuenta">Cuenta</string>
+    <string name="tituloRL">Titulo</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "98135900808",
+    "project_id": "wokinggo-df963",
+    "storage_bucket": "wokinggo-df963.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:98135900808:android:0688b767791c7214c3553d",
+        "android_client_info": {
+          "package_name": "com.workingo"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDzklyq4G8YD0xrRSRE6_fM2WrE1euiTqY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
