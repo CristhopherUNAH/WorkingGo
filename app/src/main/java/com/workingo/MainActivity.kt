@@ -1,10 +1,10 @@
 package com.workingo
 
-import android.os.Binder
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.workingo.OpcionesLogin.login_email
 import com.workingo.databinding.ActivityMainBinding
-import com.workingo.databinding.FragmentInicioBinding
 import com.workingo.fragmentos.cuentaFragment
 import com.workingo.fragmentos.inicioFragment
 import com.workingo.fragmentos.publicarFragment
@@ -21,7 +21,8 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         //primer fragmento en verse en la app
-        verfragmentInicio()
+        val intent = Intent(this, login_email::class.java)
+        startActivity(intent)
 
         //
         binding.buttonNavigationView.setOnItemReselectedListener { item->

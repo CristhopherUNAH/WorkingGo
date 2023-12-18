@@ -1,11 +1,21 @@
 <resources>
 
+    <!-- Pantalla de inicio y cuenta -->
     <string name="app_name">WorkinGo</string>
     <string name="ItemInicio">Inicio</string>
     <string name="ItemChat">Chat</string>
     <string name="ItemPublicar">Publicar</string>
     <string name="ItemCuenta">Cuenta</string>
     <string name="tituloRL">Titulo</string>
+
+    <!-- Pantalla de login -->
+    <string name="txtLogin">Login de Usuario</string>
+    <string name="emailLogin">Email</string>
+    <string name="passwordLogin">Password</string>
+    <string name="botonLogin">Ingresar</string>
+    <string name="txtNoCuenta">No tienes una cuenta</string>
+    <string name="registrar">Registrarme</string>
+
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
