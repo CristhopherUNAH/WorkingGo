@@ -16,6 +16,12 @@
     <string name="txtNoCuenta">No tienes una cuenta</string>
     <string name="registrar">Registrarme</string>
 
+    <!-- Pantalla de registro -->
+    <string name="txtRegistro">Registro de Usuario</string>
+    <string name="repetiPassword">Repedir Contrasena</string>
+    <string name="btnRegistrar">Registrar</string>
+
+
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 

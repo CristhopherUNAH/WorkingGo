@@ -1,12 +1,11 @@
-package com.workingo.fragmentos
+package com.workingo
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.workingo.R
 
-class hola : AppCompatActivity() {
+class registro : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_hola)
+        setContentView(R.layout.activity_registro)
     }
 }

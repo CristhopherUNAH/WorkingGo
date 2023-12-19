@@ -15,6 +15,9 @@
         android:theme="@style/Theme.WorkinGo"
         tools:targetApi="31">
         <activity
+            android:name=".registro"
+            android:exported="false" />
+        <activity
             android:name=".fragmentos.hola"
             android:exported="false" />
         <activity
