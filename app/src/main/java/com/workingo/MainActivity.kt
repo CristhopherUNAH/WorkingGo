@@ -3,6 +3,7 @@ package com.workingo
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.google.firebase.auth.FirebaseAuth
 import com.workingo.OpcionesLogin.login_email
 import com.workingo.databinding.ActivityMainBinding
 import com.workingo.fragmentos.cuentaFragment
@@ -12,17 +13,23 @@ import com.workingo.fragmentos.publicarFragment
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
+    private lateinit var firebaseAuth: FirebaseAuth
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
         binding = ActivityMainBinding.inflate(layoutInflater)
 
+        firebaseAuth = FirebaseAuth.getInstance()
+        comprobarSesion()
+
         setContentView(binding.root)
 
         //primer fragmento en verse en la app
         val intent = Intent(this, login_email::class.java)
         startActivity(intent)
+        //Para que no se regrese a la actividad anterior
+        finishAffinity()
 
         //
         binding.buttonNavigationView.setOnItemReselectedListener { item->
@@ -88,6 +95,17 @@ class MainActivity : AppCompatActivity() {
 
         fragmentTransition.replace(binding.fragmentL1.id, fragment, "publicarFragment")
         fragmentTransition.commit()
+
+    }
+
+    private fun comprobarSesion(){
+
+        if(firebaseAuth.currentUser == null){
+
+            startActivity(Intent(this, login_email::class.java))
+            finishAffinity()
+
+        }
 
     }
 
